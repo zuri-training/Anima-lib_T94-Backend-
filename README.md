@@ -14,6 +14,8 @@ as an attribute to an HTML element, but mainly text.
 Implementation below:
 `
 <h1 class="animate-lib-text-red">Hello World</h1>
+
 `
+
 
 
