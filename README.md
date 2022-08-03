@@ -8,9 +8,9 @@ add the below code in the head of your html file
 `
 
 # how to use in your project
-Add a class attribute to any html element.
-Use any of the library's class name.
-Save changes, and open file in the browser
+1. Add a class attribute to any html element.  
+2. Use any of the library's class name.  
+3. Save changes, and open file in the browser  
 
 
 Implementation below:
