@@ -3,7 +3,7 @@ A animation library that allows beginners perform basic web animation using norm
 
 
 # how to include in your project
-add the below code in the head of your html file
+add the below code in the head of your html file  
 `    <link rel="stylesheet" href="https://res.cloudinary.com/dlk4gbily/raw/upload/v1659498825/animotion-lib-min_newcfl.css">
 `
 
@@ -13,7 +13,7 @@ add the below code in the head of your html file
 3. Save changes, and open file in the browser  
 
 
-Implementation below:
+Implementation below:  
 `    <h1 class="blink-noraml-infinite">Hello World</h1>
 `
 
