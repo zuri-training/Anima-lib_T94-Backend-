@@ -4,15 +4,17 @@ A animation library that allows beginners perform basic web animation using norm
 
 # how to include in your project
 add the below code in the head of your html file
-`    <link rel="stylesheet" href="https://res.cloudinary.com/dlk4gbily/raw/upload/v1658975556/animate-min_hpimk4.css">
+`    <link rel="stylesheet" href="https://res.cloudinary.com/dlk4gbily/raw/upload/v1659498825/animotion-lib-min_newcfl.css">
 `
 
 # how to use in your project
-At this development stage, the library has only one class which you can add
-as an attribute to an HTML element, but mainly text.
+Add a class attribute to any html element.
+Use any of the library's class name.
+Save changes, and open file in the browser
+
 
 Implementation below:
-`    <h1 class="animate-lib-text-red">Hello World</h1>
+`    <h1 class="blink-noraml-infinite">Hello World</h1>
 `
 
 
