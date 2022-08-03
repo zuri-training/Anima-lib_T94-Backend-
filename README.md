@@ -3,7 +3,7 @@ A animation library that allows beginners perform basic web animation using norm
 
 
 # how to include in your project
-add the below code in the head of your html file  
+add the below code in the head of your html file   
 `    <link rel="stylesheet" href="https://res.cloudinary.com/dlk4gbily/raw/upload/v1659498825/animotion-lib-min_newcfl.css">
 `
 
