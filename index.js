@@ -1,4 +1,4 @@
-const connection= require("./src/config/db")
+const connection= require("./src/db/index")
 const app = require("./src/app");
 const config = require("./src/shared/config");
 
