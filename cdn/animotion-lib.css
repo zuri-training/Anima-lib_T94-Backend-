@@ -6158,7 +6158,7 @@
   }
   
   .move-right-vslow-nm-10 {
-    animation: move-right 3s normal 10;
+    animation: move-right 3s normal 10; 
   }
   
   .move-right-vslow-rev-infinite {
