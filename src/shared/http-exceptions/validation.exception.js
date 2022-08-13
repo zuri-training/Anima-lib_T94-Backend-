@@ -42,7 +42,12 @@ class ValidationException extends HttpException {
       Promise.all(validations)
         .then(() => next())
         .catch((error) => {
-          next(new ValidationException(null, formatJoiError(error.details)));
+          next(
+            new ValidationException(
+              "validation error",
+              formatJoiError(error.details)
+            )
+          );
         });
     };
   }

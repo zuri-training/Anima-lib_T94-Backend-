@@ -1,9 +1,9 @@
 require("dotenv").config();
-const connection= require("./src/db/index")
 const app = require("./src/app");
+const connectDb = require("./src/db/connect-db");
 const config = require("./src/shared/config");
 
-connection();
+connectDb();
 const port = config().port;
 
 app.listen(port, () => {

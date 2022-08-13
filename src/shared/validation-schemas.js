@@ -1,19 +1,20 @@
 const Joi = require("joi");
 
 const format = {
-  name: Joi.string(),
-  age: Joi.number(),
-  breed: Joi.string(),
+  email: Joi.string().trim().email(),
+  password: Joi.string().min(8),
+  firstName: Joi.string(),
+  lastName: Joi.string(),
 };
 
-exports.CatValidationSchema = Joi.object({
-  name: format.name.required(),
-  age: format.age.required(),
-  breed: format.breed.required(),
+exports.LoginValidationSchema = Joi.object({
+  email: format.email.required(),
+  password: Joi.string().required(),
 });
 
-exports.CatUpdateValidationSchema = Joi.object({
-  name: format.name,
-  age: format.age,
-  breed: format.breed,
+exports.RegisterValidationSchema = Joi.object({
+  email: format.email.required(),
+  password: format.password.required(),
+  firstName: format.firstName.required(),
+  lastName: format.lastName.required(),
 });
