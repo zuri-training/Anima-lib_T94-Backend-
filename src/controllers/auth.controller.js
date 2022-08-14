@@ -26,4 +26,16 @@ module.exports = {
       authorizedUser
     );
   }),
+
+  resetPassword: HttpException.wrapHandler(async (req, res) => {
+    await authService.resetPassword(req.body);
+
+    ResponseService.json(res, HTTP_STATUS.OK, "password reset successful");
+  }),
+
+  forgotPassword: HttpException.wrapHandler(async (req, res) => {
+    await authService.forgotPassword(req.body);
+
+    ResponseService.json(res, HTTP_STATUS.OK, "successful");
+  }),
 };

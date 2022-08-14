@@ -18,3 +18,12 @@ exports.RegisterValidationSchema = Joi.object({
   firstName: format.firstName.required(),
   lastName: format.lastName.required(),
 });
+
+exports.ResetPasswordValidation = Joi.object({
+  resetCode: Joi.string().required(),
+  password: format.password.required(),
+});
+
+exports.ForgotPasswordValidation = Joi.object({
+  email: format.email.required(),
+});

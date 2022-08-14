@@ -22,6 +22,10 @@ const User = new Schema(
       type: String,
       required: true,
     },
+    passwordResetCode: {
+      type: String,
+      required: false,
+    },
     googleId: {
       type: String,
       required: false,
@@ -41,8 +45,12 @@ const User = new Schema(
 );
 
 User.pre("save", async function (next) {
-  this.password = await bcrypt.hash(this.password, 12);
+  if (!this.isModified("password")) {
+    next();
+    return;
+  }
 
+  this.password = await bcrypt.hash(this.password, 8);
   next();
 });
 
